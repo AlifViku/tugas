@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Loading Lazy</title>
+    <style>
+      img {
+        width: 500px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/img/image1.png" loading="lazy" />
+    <br />
+    <img src="/img/image2.png" loading="lazy" />
+    <br />
+    <img src="/img/image3.png" loading="lazy" />
+    <br />
+    <img src="/img/image4.png" loading="lazy" />
+    <br />
+    <img src="/img/image5.png" loading="lazy" />
+    <br />
+    <img src="/img/image6.png" loading="lazy" />
+    <br />
+    <img src="/img/image7.png" loading="lazy" />
+    <br />
+    <img src="/img/image8.png" loading="lazy" />
+    <br />
+    <img src="/img/image9.png" loading="lazy" />
+    <br />
+    <img src="/img/image10.png" loading="lazy" />
+    <br />
+    <img src="/img/image11.png" loading="lazy" />
+    <br />
+    <img src="/img/image12.png" loading="lazy" />
+    <br />
+    <img src="/img/image13.png" loading="lazy" />
+    <br />
+    <img src="/img/image14.png" loading="lazy" />
+    <br />
+    <img src="/img/image15.png" loading="lazy" />
+  </body>
+</html>
+
+<script>
+  for (let i = 1; i <= 5; i++) {
+    const img = document.createElement("img")
+    img.src = `/img/image${i}.png`
+    img.setAttribute("loading", "lazy");
+    img.setAttribute("alt", "..");
+    img.style.width = "500px";
+    img.style.height = "500px";
+    document.body.appendChild(img);
+  }
+</script>
